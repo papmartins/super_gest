@@ -24,7 +24,7 @@ class LoginController extends Controller
 
         $validUser = new UserService();
 
-        if($user = $validUser->valiteUser($request)){
+        if($user = $validUser->validateUser($request)){
             session_start();
             $_SESSION['name'] = $user->name;
             $_SESSION['email'] = $user->email;

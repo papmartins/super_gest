@@ -18,7 +18,7 @@ class UserService
         $this->userRepository = new UserRepository($this->user);
     }
 
-    public function valiteUser(Request $request) {
+    public function validateUser(Request $request) {
         $email = $request->get('user');
         $password = $request->get('password');
 
